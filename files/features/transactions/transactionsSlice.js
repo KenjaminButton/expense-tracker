@@ -1,3 +1,5 @@
+import createSlice from '@reduxjs/toolkit';
+
 export const CATEGORIES = ['housing', 'food', 'transportation', 'utilities', 'clothing', 'healthcare', 'personal', 'education', 'entertainment'];
 const initialState = Object.fromEntries(CATEGORIES.map(category => [category, []]))
 
