@@ -12,10 +12,8 @@ const budgetsSlice = createSlice({
       // action.payload will have a category and amount property.
       const category = action.payload.category;
       const amount = action.payload.amount;
-      // Update the state by finding the budget object
+      // Update the state by "finding" the budget object
       // Note: the variables category and action, implemented below, are each assigned action.payload (referenced in the above const). 
-      // Ex. category = action.payload.category ;
-      // Ex. amount = action.payload.category;
       // The budget object whose .category value matches action.payload.category and changing with the .amount value to action.payload.amount.
       state.find(budget => budget.category === category).amount = amount 
     }
